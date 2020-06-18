@@ -1,0 +1,25 @@
+/* SCSS HEX */
+$gunmetal: #122b33ff;
+$charcoal: #334950ff;
+$cadet: #53676eff;
+$slate-gray: #74858bff;
+$cadet-grey: #95a3a8ff;
+$silver-sand: #b5c1c6ff;
+$gainsboro: #d6dfe3ff;
+
+$white: #ffffff;
+$blue-green: #349eb8ff;
+$copper: #b87d34ff;
+$medium-carmine: #b83b34ff;
+
+:export {
+  white: $white;
+  primary: $blue-green;
+  secondary: $copper;
+  dark-text: $silver-sand;
+  dark-base: $gunmetal;
+  dark-background: $charcoal;
+  light-text: $charcoal;
+  light-base: $gainsboro;
+  light-background: $silver-sand;
+}
