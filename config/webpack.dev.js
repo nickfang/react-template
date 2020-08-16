@@ -4,11 +4,11 @@ const webpack = require('webpack');
 const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 // const dotenv = require('dotenv');
 
-const envDev = path.join(__dirname, '/.env.development');
+console.log('webpack.dev.js dirname', __dirname);
+const envDev = path.join(__dirname, '../.env.development');
 const env = require('dotenv').config({ path: envDev }).parsed;
 
 const common = require('./webpack.common');
-
 
 const envKeys = Object.keys(env).reduce((acc, value) => {
   acc[`process.env.${value}`] = JSON.stringify(env[value]);
@@ -28,6 +28,6 @@ module.exports = merge(common, {
   plugins: [
     new webpack.DefinePlugin(envKeys),
     new webpack.HotModuleReplacementPlugin(),
-    new OpenBrowserPlugin({ url: 'https://localhost:8080' }),
+    new OpenBrowserPlugin({ url: 'http://localhost:8080' }),
   ],
 });

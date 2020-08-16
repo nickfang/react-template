@@ -6,12 +6,12 @@ const webpack = require('webpack');
 const path = require('path');
 const common = require('./webpack.common');
 
-const buildPath = path.join(__dirname, '/dist');
+const buildPath = path.join(__dirname, '../dist');
 
 module.exports = merge(common, {
   mode: 'production',
   entry: {
-    index: './src/index.js',
+    index: '../src/index.js',
   },
   plugins: [
     new webpack.ProgressPlugin(),

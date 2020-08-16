@@ -7,7 +7,6 @@ import Nav from './components/Nav';
 import Home from './components/Home';
 // import About from './components/About';
 import User from './components/User';
-import Expenses from './components/Expenses';
 import NotFound from './components/NotFound';
 import Signin from './components/Signin';
 
