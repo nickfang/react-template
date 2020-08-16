@@ -4,7 +4,6 @@ const webpack = require('webpack');
 const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 // const dotenv = require('dotenv');
 
-console.log('webpack.dev.js dirname', __dirname);
 const envDev = path.join(__dirname, '../.env.development');
 const env = require('dotenv').config({ path: envDev }).parsed;
 
