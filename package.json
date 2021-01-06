@@ -36,7 +36,7 @@
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/styles": "^4.10.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "final-form": "^4.20.1",
     "mui-rff": "^2.4.2",
